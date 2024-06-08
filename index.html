@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 목록 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            flex: 0 0 20%;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu a {
+            display: block;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .menu a:hover {
+            background-color: #2980b9;
+        }
+        .content {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .menu-image {
+            margin-bottom: 20px;
+        }
+        .product-link {
+            text-align: center;
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            width: fit-content; /* 변경 */
+            margin: 0 auto; /* 변경 */
+        }
+        .product-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #E3CEF6; /* 원하는 배경색으로 변경하세요 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더에 이미지 추가 -->
+    <header>
+        <img src="https://ameli.co.kr/web/upload/category/shop1_348_top_582201.jpg" alt="상단 이미지" style="width: 100%; height: auto;">
+    </header>
+    <div class="container">
+        <div class="menu">
+            <img src="https://ameli.co.kr/web/season2_skin/skin13/images/w_logo.png" alt="메뉴 이미지" class="menu-image">
+            <ul>
+                <li><a href="#">Best 10</a></li>
+                <li><a href="#">쿠션</a></li>
+                <li><a href="#">섀도우</a></li>
+            </ul>
+        </div>
+        <div class="content">
+        <!-- 상품 목록 -->
+              <div class="product">
+                <img src="https://ameli.co.kr/web/product/medium/202105/799a66efde15a66843d8a20c8e6d64db.jpg" alt="상품 이미지" class="product-image" >
+                <div class="product-title" style="text-align: center;">스텝베이직 243 마카롱그레이</div>
+                <div class="product-price" style="text-align: center;">₩ 15,000</div><br><br>
+                <div class="product-description" style="text-align: center;">
+                    아멜리 또 하나의 레전드.<br>
+                    대체불가 음영 섀도, 코섀딩의 1인자!<br>
+                    따뜻한 베이지를 담은 회갈색<br>
+                    가장 자연스러운 그림자 색<br>
+                    시멘트 색이 부리는 음영의 마술<br>
+                    티 안나게 윤곽만<br><br>
+                    AMELI STEP BASIC 243 MACARON GRAY
+                </div><br>
+                  <a href="할인가.html" class="product-link" target="_blank" style="background-color: #DA81F5;">클릭하고 할인가 보기</a>
+            </div>
+            <div class="product">
+                <img src="https://ameli.co.kr/web/product/medium/202402/8487182871abee2022652a011f30d9aa.jpg" alt="상품 이미지" class="product-image">
+                <div class="product-title" style="text-align: center;">컴플리먼트 시리즈 쿠션 SPF50+, PA+++ 보라</div>
+                <div class="product-price" style="text-align: center;">₩ 28,000</div><br><br>
+                <div class="product-description" style="text-align: center;">
+                    연보라색 파우더에 이은 보라색 쿠션?<br>
+                    저마다의 피부톤에 말간 보라가 스며들어<br>
+                    노르스름한 피부톤은 청아하게<br>
+                    어두운 피부톤은 화사하게 보완해 줍니다.<br>
+                </div><br>
+                <a href="할인가.html" class="product-link" target="_blank" style="background-color: #DA81F5;">클릭하고 할인가 보기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 상세 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+        }
+        .product-details {
+            margin-top: 20px;
+        }
+        .product-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-price {
+            font-size: 24px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 10px;
+        }
+        .discount-price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .product-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #3B240B; 
+        }
+        .buy-button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ameli.co.kr/web/product/big/202105/aebbf8c20b85e4e91b1ba0cda3d5b1fd.jpg" alt="상품 이미지" class="product-image">
+        <div class="product-details">
+            <div class="product-title">스텝베이직 243 마카롱그레이</div>
+            <div class="product-price">
+                <span class="original-price">₩ 20,000</span>
+                <span class="discount-price">₩ 15,000</span>
+            </div>
+            <div class="product-description">
+                아멜리 또 하나의 레전드.<br>
+                대체불가 음영 섀도, 코섀딩의 1인자!<br>
+                따뜻한 베이지를 담은 회갈색<br>
+                가장 자연스러운 그림자 색<br>
+                시멘트 색이 부리는 음영의 마술<br>
+                티 안나게 윤곽만<br><br>
+                AMELI STEP BASIC 243 MACARON GRAY
+            </div>
+            <a href="#" class="buy-button">구매하기</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 상세 페이지</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+        }
+        .product-details {
+            margin-top: 20px;
+        }
+        .product-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-price {
+            font-size: 24px;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 10px;
+        }
+        .discount-price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .discount-info {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #3B240B; 
+        }
+        .buy-button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* 구매하기 버튼과의 간격을 조절합니다 */
+        }
+        .buy-button:hover {
+            background-color: #2980b9;
+        }
+        .cart-button {
+            background-color: #ccc;
+            color: #333;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .cart-button:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ameli.co.kr/web/product/medium/202402/8487182871abee2022652a011f30d9aa.jpg" alt="상품 이미지" class="product-image">
+        <div class="product-details">
+            <div class="product-title">컴플리먼트 시리즈 쿠션 SPF50+, PA+++ 보라</div>
+            <div class="product-price">
+                <span class="original-price">₩ 28,000</span><br>
+                <span class="discount-price">₩ 25,200</span>
+            </div>
+            <div class="discount-info">10% 할인</div>
+            <div class="product-description">
+                노랑의 보색 보라, 보라의 보색 노랑<br>
+                끝과 끝의 색이 만나 만들어낸 자연스러운 얼굴빛<br>
+
+                단 한 방울의 노랑도 없이 만들어낸 보라.<br>
+                저마다의 피부톤에 말간 보라가 스며들어<br>
+
+                노르스름한 피부톤은 청아하게<br>
+                어두운 피부톤은 화사하게.<br><br>
+
+                내 얼굴빛을 자연스럽게 보완해 주는<br>
+                아멜리의 이상한, 그리고 새로운 쿠션.<br>
+
+                출시후 줄곧 1위, 보라<br>
+
+                COMPLEMENT SERIES CUSHION BORA<br><br>
+
+
+                
+                13g / 0 45oz.<br>
+                7.7*7.7*2.4(cm)<br>
+                자외선 차단 기능성 제품 SPF50+, PA+++<br>
+
+            </div>
+           <a href="#" class="cart-button">장바구니</a> 
+            <a href="#" class="buy-button">구매하기</a>
+
+        </div>
+    </div>
+</body>
+</html>
