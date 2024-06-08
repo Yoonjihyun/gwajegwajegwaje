@@ -66,31 +66,83 @@
         .product-link:hover {
             background-color: #2980b9;
         }
-    </style>
-    <style>
-        body {
+        .login-form {
+            display: flex;
+            gap: 10px;
+            background-color: #4a5568;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .login-form input {
+            padding: 5px;
+            border: 1px solid #cbd5e0;
+            border-radius: 5px;
+            outline: none;
+        }
+        .login-form button {
+            background-color: #4299e1;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #2b6cb0;
+        }
+        .header {
             background-color: #E3CEF6; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            height: 2cm;
+        }
+        .shop-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .header-line {
+            background-color: #ccc;
+            height: 5px;
         }
     </style>
 </head>
 <body>
+    <header class="header">
+        <div class="shop-name"> 아멜리 </div>
+        <form class="login-form">
+            <input type="text" id="username" placeholder="아이디">
+            <input type="password" id="password" placeholder="비밀번호">
+            <button onclick="login()" type="button">로그인</button>
+        </form>
+        <script>
+            function login() {
+                alert("가입 정보가 없습니다.");
+            }
+        </script>
+    </header>
     <header>
         <img src="https://ameli.co.kr/web/upload/category/shop1_348_top_582201.jpg" alt="상단 이미지" style="width: 100%; height: auto;">
     </header>
+
+    <div class="header-line"></div>
     <div class="container">
         <div class="menu" style="text-align: center;">
             <img src="https://ameli.co.kr/web/season2_skin/skin13/images/w_logo.png" alt="메뉴 이미지" class="menu-image" style="margin-bottom: 10px;">
             <ul style="padding: 0;">
                 <li style="margin-bottom: 10px;"><a href="#" style="background-color: #08088A;">Best 10</a></li>
-                <li style="margin-bottom: 10px;"><a href="#" >쿠션</a></li>
-                <li style="margin-bottom: 10px;"><a href="#" >섀도우</a></li>
+                <li style="margin-bottom: 10px;"><a href="#">쿠션</a></li>
+                <li style="margin-bottom: 10px;"><a href="#">섀도우</a></li>
             </ul>
         </div>
         <div class="content">
-        <!-- 상품 목록 -->
-              <div class="product">
-                <img src="https://ameli.co.kr/web/product/medium/202105/799a66efde15a66843d8a20c8e6d64db.jpg" alt="상품 이미지" class="product-image" style="width: 100%; height: auto;" >
-                <div class="product-title" style="text-align: center; font-weight: bold; ">스텝베이직 243 마카롱그레이</div>
+            <!-- 상품 목록 -->
+            <div class="product">
+                <img src="https://ameli.co.kr/web/product/medium/202105/799a66efde15a66843d8a20c8e6d64db.jpg" alt="상품 이미지" class="product-image" style="width: 100%; height: auto;">
+                <div class="product-title" style="text-align: center; font-weight: bold;">스텝베이직 243 마카롱그레이</div>
                 <div class="product-price" style="text-align: center; font-weight: bold;">₩ 15,000</div><br><br>
                 <div class="product-description" style="text-align: center;">
                     아멜리 또 하나의 레전드.<br>
@@ -101,7 +153,7 @@
                     티 안나게 윤곽만<br><br>
                     AMELI STEP BASIC 243 MACARON GRAY
                 </div><br>
-                  <a href="마카롱그레이.html" class="product-link" target="_blank" style="background-color: #DA81F5;">클릭하고 할인가 보기</a>
+                <a href="마카롱그레이.html" class="product-link" target="_blank" style="background-color: #DA81F5;">클릭하고 할인가 보기</a>
             </div>
             <div class="product">
                 <img src="https://ameli.co.kr/web/product/medium/202402/8487182871abee2022652a011f30d9aa.jpg" alt="상품 이미지" class="product-image" style="width: 100%; height: auto;">
@@ -119,4 +171,3 @@
     </div>
 </body>
 </html>
-
